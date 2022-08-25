@@ -18,7 +18,8 @@ class Repository extends HTMLElement {
    
     this.getDetails = this.getDetails.bind(this);
 
-    this.innerHTML = ` <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub"><span class="gh-ico" aria-hidden="true"></span> <span class="gh-text">Blaze it</span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">Loading</a></span>`;
+    this.innerHTML = this.style + ` <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub"><span class="gh-text">Loading</span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">....</a></span>`;
+      
       this.icon = "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='12 12 40 40'%3e%3cpath fill='%23333' d='M32 13.4c-10.5 0-19 8.5-19 19 0 8.4 5.5 15.5 13 18 1 .2 1.3-.4 1.3-.9v-3.2c-5.3 1.1-6.4-2.6-6.4-2.6-.9-2.1-2.1-2.7-2.1-2.7-1.7-1.2.1-1.1.1-1.1 1.9.1 2.9 2 2.9 2 1.7 2.9 4.5 2.1 5.5 1.6.2-1.2.7-2.1 1.2-2.6-4.2-.5-8.7-2.1-8.7-9.4 0-2.1.7-3.7 2-5.1-.2-.5-.8-2.4.2-5 0 0 1.6-.5 5.2 2 1.5-.4 3.1-.7 4.8-.7 1.6 0 3.3.2 4.7.7 3.6-2.4 5.2-2 5.2-2 1 2.6.4 4.6.2 5 1.2 1.3 2 3 2 5.1 0 7.3-4.5 8.9-8.7 9.4.7.6 1.3 1.7 1.3 3.5v5.2c0 .5.4 1.1 1.3.9 7.5-2.6 13-9.7 13-18.1 0-10.5-8.5-19-19-19z'/%3e%3c/svg%3e"
   }
 
@@ -188,9 +189,14 @@ body{
 // TODO - remove junk HTML
   cardError({ message }) {
     if (message.includes("API rate limit")){
-      return ` <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn"  rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub">${this.icon} <span class="gh-text"></span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">API</a></span>`;
+      
+      // background: url("${this.icon}") 0 0 / 100% 100% no-repeat;
+      return `   
+      <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" rel="noopener noreferrer"><span class="gh-ico" aria-hidden="true"></span> <span class="gh-text">Error</span> </a><a class="gh-count" href="#" rel="noopener noreferrer"  aria-label="Github Button - Error" style="display: block;">API LIMIT</a></span>
+      `
+    } else{
+    return ` <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub"><span class="gh-ico" aria-hidden="true"></span> <span class="gh-text">Error</span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">${message}</a></span>`;
     }
-    return `<div class="github-card">Error: ${message}</div>`;
   }
 
   cardTemplate({ owner, full_name, description, html_url, language, topics, name, forks, stargazers_count, watchers_count}) {
@@ -233,7 +239,7 @@ for (const follower in repo){
   Text = `Sponsor @${this.name}`
   html_url = `https://github.com/sponsors/${this.name}`
   return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Sponsor ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
     
    `
     }
@@ -254,14 +260,14 @@ for (const follower in repo){
       }
 
   return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer">${this.icon} <span class="gh-text">${Text}</span> </a></span>
     
    `
     }
     
     
     return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">${format(Type)}</a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Star ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a><a class="gh-count" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="${format(Type)} stargazers on GitHub" style="display: block;">${format(Type)}</a></span>
     
    `;
   }
