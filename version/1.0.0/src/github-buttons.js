@@ -163,7 +163,10 @@ class Repository extends HTMLElement {
   margin-top: -7px;
   border-width: 7px 7px 7px 0;
 }
-
+.octicon-star{
+position:relative;
+top:2px;
+}
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-size: 16px;
@@ -203,6 +206,7 @@ body{
  
     var Type = stargazers_count
     var Text = "Star"
+   
     const format = n => n > 1000 ? `${(n / 1000).toFixed(1)}k` : n;
     this.icon = `<span class="gh-ico" aria-hidden="true"></span>`
     
@@ -219,7 +223,7 @@ body{
         if (this.getAttribute("icon") == "none"){
       this.icon = ""
     }
-    
+
      if (this.getAttribute("type") == "followers"){
      var repo = this.repoDetails;
        var followerCount = 0 
