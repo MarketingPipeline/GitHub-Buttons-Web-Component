@@ -66,13 +66,62 @@ How to show Custom Button
 
 <github-button type="custom" text="My super awesome custom button"></github-button>
 
-Options:
 
-href < set ahref link for custom button
-icon < set icon 
-text < set text
-new_window < open link in new window
+###                                                                                                                    Options
 
+
+<table>
+<tr>
+<th>Attribute</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+<tr>
+<td>repo</td>
+<td> Your GitHub username + repo or GitHub Profile</td>
+<td><code>undefined</code></td>
+<td>Yes</td>
+</tr>
+
+
+<tr>
+<td>type</td>
+              <td>The type of button to show </code></td>
+<td><code>Star Count</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>icon</td>
+<td>The icon to use in the button </td>
+<td><code>GitHub Icon</code></td>
+<td>No</td>
+</tr>
+
+
+
+<tr>
+<td>new-window</td>
+<td>If                    <code>True</code>, button link will open in a new window</td>
+<td><code>False</code></td>
+<td>No</td>
+</tr>
+
+
+ 
+<tr>
+<td>text</td>
+<td>Text to show (For Custom Button Type Only)</td>
+<td><code>undefined</code></td>
+<td>No</td>
+</tr>
+
+
+
+
+
+</table>
 
 
 
