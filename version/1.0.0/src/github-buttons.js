@@ -15,6 +15,12 @@ class Repository extends HTMLElement {
   this.endpoint = `https://api.github.com/users/${this.name}/followers`;
     }
     
+            if (this.getAttribute("type") == "issues" || this.getAttribute("type") == "pulls"  ){
+    
+  this.endpoint = `https://api.github.com/repos/${this.name}/issues`;
+    }
+    
+   
    
     this.getDetails = this.getDetails.bind(this);
 
@@ -236,6 +242,42 @@ for (const follower in repo){
   Type = followerCount
     }
     
+       if (this.getAttribute("type") == "issues"){
+       var issueCount = 0 
+       for (const issue in this.repoDetails){
+         // ignore pull requests
+         if (!this.repoDetails[issue].pull_request){
+          // do nothing
+            issueCount +=1
+             }
+         
+         Text = "Issues"
+  Type = issueCount
+       }
+       
+        
+    }
+    
+
+    
+    
+       if (this.getAttribute("type") == "pulls"){
+       var pullCount = 0 
+       for (const issue in this.repoDetails){
+         // ignore issues
+         if (this.repoDetails[issue].pull_request){
+          // do nothing
+            pullCount +=1
+             }
+         
+         Text = "Pull Requests"
+  Type = pullCount
+       }
+       
+        
+    }
+    
+
     
          if (this.getAttribute("type") == "sponsor"){
 
