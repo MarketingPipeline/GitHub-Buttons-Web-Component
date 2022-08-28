@@ -1,0 +1,136 @@
+<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+<style>
+  .markdown-body h2{
+border-bottom:none;
+}
+</style>
+<div class="color-bg-canvas-inset pb-6">
+  <header class="container-lg mx-auto p-responsive d-flex flex-items-center flex-wrap flex-md-nowrap pt-3 pb-6">
+   
+
+<div class="container-lg mx-auto py-6 p-responsive">
+        <p>Docs / GitHub Buttons</p>
+      <h1>GitHub buttons</h1>
+      <p>Showcase your GitHub success with GitHub star buttons, follower buttons & more.</p>
+      <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Available on <a href="https://github.com/mdo/github-buttons">GitHub</a>. Licensed <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2</a>.</p>
+
+  <hr>
+  
+  <div class="markdown-body">
+    <h2 class="no_toc" id="contents">Contents</h2>
+    <ul id="markdown-toc">
+  <li><a href="#star" id="markdown-toc-star">Star</a></li>
+  <li><a href="#watch" id="markdown-toc-watch">Watch</a></li>
+  <li><a href="#fork" id="markdown-toc-fork">Fork</a></li>
+  <li><a href="#follow" id="markdown-toc-follow">Follow</a></li>
+  <li><a href="#sponsor" id="markdown-toc-sponsor">Sponsor</a></li>
+  <li><a href="#available-options" id="markdown-toc-available-options">Available options</a>    
+  </li>
+  <li><a href="#original-watch-aka-star" id="markdown-toc-original-watch-aka-star">Original Watch, aka Star</a></li>
+  <li><a href="#limitations" id="markdown-toc-limitations">Limitations</a></li>
+</ul>
+<md>
+
+
+## Example and Usage
+c
+
+  
+### Star  
+  
+### How to show Star Button <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
+     
+
+
+
+    <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
+ 
+## How to show Watch Button <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+
+## How to show Fork Button <github-button href="test" text="Follow @${this.name}" type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+
+
+## How to show Followers Button <github-button type="followers" repo="MarketingPipeline"></github-button>
+
+
+
+## How to show Sponsor Button <github-button type="sponsor" repo="MarketingPipeline"></github-button>
+
+
+## How to show Pull Requests Button <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+
+## How to show Issues Button <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
+        
+
+## How to show Custom Button <github-button onclick="alert('hello')" type="custom" text="GitHubs Buttons by @MarketingPipeline"></github-button>
+
+
+ 
+  
+##                                                       Options
+
+
+<table>
+<tr>
+<th>Attribute</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+<tr>
+<td>repo</td>
+  <td> Your GitHub username + repo or GitHub Profile <b>(Not Required For Custom Button)</b></td>
+<td><code>undefined</code></td>
+<td>Yes</td>
+</tr>
+
+
+<tr>
+<td>type</td>
+              <td>The type of button to show </code></td>
+<td><code>Star Count</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>icon</td>
+<td>The icon to use in the button </td>
+<td><code>GitHub Icon</code></td>
+<td>No</td>
+</tr>
+
+
+
+<tr>
+<td>new-window</td>
+<td>If                    <code>True</code>, button link will open in a new window</td>
+<td><code>False</code></td>
+<td>No</td>
+</tr>
+
+
+ 
+<tr>
+<td>text</td>
+<td>Text to show (For Custom Button Type Only)</td>
+<td><code>undefined</code></td>
+<td>No</td>
+</tr>
+
+
+
+
+
+</table>
+</github-md>
+
+
+</body>
+  <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
+</html>
+  </div>
+</div>
+
