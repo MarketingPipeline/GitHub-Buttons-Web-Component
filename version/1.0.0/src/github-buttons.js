@@ -216,6 +216,13 @@ body{
     const format = n => n > 1000 ? `${(n / 1000).toFixed(1)}k` : n;
     this.icon = `<span class="gh-ico" aria-hidden="true"></span>`
     
+    
+    /// Allow user to set custom links for all buttons
+    if (this.getAttribute("href")){
+        html_url = `${this.getAttribute("href")}`
+      }
+    
+    
     if (this.getAttribute("type") == "fork"){
       Type = forks
       Text = "Fork"
@@ -238,12 +245,13 @@ for (const follower in repo){
 
   followerCount += 1
 }
-  Text = "Follow"
+  Text = `Follow @${this.name}`
   Type = followerCount
     }
     
        if (this.getAttribute("type") == "issues"){
        var issueCount = 0 
+         html_url = `https://github.com/${this.name}/issues`
        for (const issue in this.repoDetails){
          // ignore pull requests
          if (!this.repoDetails[issue].pull_request){
@@ -283,6 +291,9 @@ for (const follower in repo){
 
   
   Text = `Sponsor @${this.name}`
+   if (this.getAttribute("text")){
+       Text =  this.getAttribute("text")
+       }
   html_url = `https://github.com/sponsors/${this.name}`
   return `
     <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Sponsor ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
@@ -300,16 +311,21 @@ for (const follower in repo){
   Text = `${this.getAttribute("text")}`
   
   if (this.getAttribute("href")){
-        html_url = `${this.getAttribute("href")}`
+        html_url = `href="${this.getAttribute("href")}"`
       } else{
-            html_url = `#`
+            html_url = ``
       }
 
   return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer">${this.icon} <span class="gh-text">${Text}</span> </a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" ${html_url} rel="noopener noreferrer">${this.icon} <span class="gh-text">${Text}</span> </a></span>
     
    `
     }
+    
+    
+      if (this.getAttribute("text")){
+       Text =  this.getAttribute("text")
+       }
     
     
     return `
