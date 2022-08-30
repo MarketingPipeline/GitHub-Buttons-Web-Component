@@ -13,11 +13,11 @@
   <br>
   <small> <b><i>Show your support!</i> </b></small>
   <br>
-   <a href="https://github.com/MarketingPipeline/Markdown-Tag">
-    <img title="Star on GitHub" src="https://img.shields.io/github/stars/MarketingPipeline/Markdown-Tag.svg?style=social&label=Star">
+   <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component">
+    <img title="Star on GitHub" src="https://img.shields.io/github/stars/MarketingPipeline/GitHub-Buttons-Web-Component.svg?style=social&label=Star">
   </a>
-  <a href="https://github.com/MarketingPipeline/Markdown-Tag/fork">
-    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/Markdown-Tag.svg?style=social&label=Fork">
+  <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/fork">
+    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/GitHub-Buttons-Web-Component.svg?style=social&label=Fork">
   </a>
    </p>  
    
@@ -26,51 +26,60 @@
 
 ## Example and Usage
 
-You can view a live demo of the GitHub Buttons web component [here](website.com)
+You can view a demo of the GitHub Buttons web component [here](https://marketingpipeline.github.io/GitHub-Buttons-Web-Component/)
 
-How to show Star Button
+
+How to use <b><i>GitHub Buttons</b></i>:
+
+   include this [script](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js)  in your HTML document.
+         
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js"></script>    
+
+
+
+### How to show Star Button
 
     <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
  
  
-How to show Watch Button
+### How to show Watch Button
  
     <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
-How to show Fork Button
+### How to show Fork Button
 
     <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
 
-How to show Followers Button
+### How to show Followers Button
 
     <github-button type="followers" repo="MarketingPipeline"></github-button>
 
 
 
-How to show Sponsor Button
+### How to show Sponsor Button
 
     <github-button type="sponsor" repo="MarketingPipeline"></github-button>
 
 
-How to show Pull Requests Button
+### How to show Pull Requests Button
 
     <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
-How to show Issues Button
+### How to show Issues Button
 
     <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
         
 
-How to show Custom Button
+### How to show Custom Button
 
     <github-button type="custom" text="My super awesome custom button"></github-button>
 
 
-###                                                                                                                    Options
+## Options
 
 
 <table>
@@ -139,17 +148,17 @@ How to show Custom Button
 
 
 
-## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/Markdown-Tag)
+## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/GitHub-Buttons-Web-Component)
 
 Want to improve this? Create a pull request with detailed changes / improvements! If approved you will be added to the list of contributors of this awesome project!
 
 
 See also the list of
-[contributors](https://github.com/MarketingPipeline/Markdown-Tag/graphs/contributors) who
+[contributors](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/graphs/contributors) who
 participate in this project.
 
-## License ![GitHub](https://img.shields.io/github/license/MarketingPipeline/markdown-tag)
+## License ![GitHub](https://img.shields.io/github/license/MarketingPipeline/GitHub-Buttons-Web-Component)
 
 This project is licensed under the MIT License - see the
-[LICENSE.md](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/LICENSE) file for
+[LICENSE.md](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/LICENSE) file for
 details.
