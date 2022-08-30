@@ -226,6 +226,7 @@ body{
     if (this.getAttribute("type") == "fork"){
       Type = forks
       Text = "Fork"
+       html_url = `https://github.com/${this.name}/fork`
     }
     
       if (this.getAttribute("type") == "watch"){
@@ -277,7 +278,7 @@ for (const follower in repo){
           // do nothing
             pullCount +=1
              }
-         
+          html_url = `https://github.com/${this.name}/pulls`
          Text = "Pull Requests"
   Type = pullCount
        }
