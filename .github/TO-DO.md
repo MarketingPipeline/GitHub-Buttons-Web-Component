@@ -11,3 +11,4 @@
 
 - [ ] Add proper icons for star count etc. (Take the original SVG from GitHub etc) 
 
+- [ ] All attributes to <code>toLowerCase</code>
