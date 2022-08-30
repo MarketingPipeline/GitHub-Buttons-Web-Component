@@ -1,7 +1,7 @@
 # GitHub-Buttons-Web-Component
 
 <p align="center">
-  <img height="400" src="https://imgur.com/oQgTNF3.png" />
+  <img height="400" src="https://raw.githubusercontent.com/typectrl/ngx-github-buttons/master/src/assets/share.png" />
 </p>
                                                                      
 
