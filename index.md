@@ -1,38 +1,39 @@
-<html>
 <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
-
-  <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js"></script>   
 <style>
-  .markdown-body h2{
-border-bottom:none;
+github-button{
+  position:absolute;
+  margin-left:15px;
+  margin-top:-2px;
 }
 </style>
-
 <div class="color-bg-canvas-inset pb-6">
   <header class="container-lg mx-auto p-responsive d-flex flex-items-center flex-wrap flex-md-nowrap pt-3 pb-6">
    
 
 <div class="container-lg mx-auto py-6 p-responsive">
-        <p>Docs / GitHub Buttons</p>
-      <h1>GitHub buttons</h1>
+        <!--<p>Docs / GitHub Buttons</p> wonder whats coming ;) --> 
+      <h1>GitHub Buttons Web Component</h1>
       <p>Showcase your GitHub success with GitHub star buttons, follower buttons & more.</p>
-      <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Source code is available on <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/">GitHub</a>. Licensed <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/LICENSE">MIT</a>.</p>
+      <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Source code is available on <a href="https://github.com/mdo/github-buttons">GitHub</a>. Licensed <a href="https://www.apache.org/licenses/LICENSE-2.0">MIT</a>.</p>
 
   <hr>
   
   <div class="markdown-body">
     <h2 class="no_toc" id="contents">Contents</h2>
-    <ul id="markdown-toc">
-  <li><a href="#star" id="markdown-toc-star">Star</a></li>
-  <li><a href="#watch" id="markdown-toc-watch">Watch</a></li>
-  <li><a href="#fork" id="markdown-toc-fork">Fork</a></li>
-  <li><a href="#follow" id="markdown-toc-follow">Follow</a></li>
-  <li><a href="#sponsor" id="markdown-toc-sponsor">Sponsor</a></li>
-  <li><a href="#available-options" id="markdown-toc-available-options">Available options</a>    
-  </li>
-  <li><a href="#original-watch-aka-star" id="markdown-toc-original-watch-aka-star">Original Watch, aka Star</a></li>
-  <li><a href="#limitations" id="markdown-toc-limitations">Limitations</a></li>
-</ul>
+<md>
+  - [Example and Usage](#example-and-usage)
+     * [How to show Star Button](#howtoshowstarbuttongithubbuttonrepomarketingpipelinemarkdowntaggithubbutton)
+     * [How to show Watch Button ](#howtoshowwatchbuttongithubbuttontypewatchrepomarketingpipelinemarkdowntaggithubbutton)
+     * [How to show Fork Button](#howtoshowforkbuttongithubbuttontypeforkrepomarketingpipelinemarkdowntaggithubbutton)
+     * [How to show Followers Button ](#howtoshowfollowersbuttongithubbuttontypefollowersrepomarketingpipelinegithubbutton)
+     * [How to show Sponsor Button](#howtoshowsponsorbuttongithubbuttontypesponsorrepomarketingpipelinegithubbutton)
+     * [How to show Pull Requests Button ](#howtoshowpullrequestsbuttongithubbuttontypepullsrepomarketingpipelinemarkdowntaggithubbutton)
+     * [How to show Issues Button](#howtoshowissuesbuttongithubbuttontypeissuesrepomarketingpipelinemarkdowntaggithubbutton)
+     * [How to show Custom Button](#howtoshowcustombuttongithubbuttononclickalerthelloworldiconhttpsuploadwikimediaorgwikipediacommonsthumbee0snicesvg800pxsnicesvgpngtypecustomtextgithubbuttonsbymarketingpipelinegithubbutton)
+- [Options](#options)
+
+
+    </md> 
 <md>
 
 
@@ -40,6 +41,15 @@ border-bottom:none;
 
 
   
+How to use <b><i>GitHub Buttons</b></i>:
+
+   include this [script](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js)  in your HTML document.
+  
+  
+<pre>&lt;script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js">&lt;/script&gt;</pre>
+   
+
+
 
   
 ### How to show Star Button <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
@@ -149,10 +159,9 @@ border-bottom:none;
 </table>
 </github-md>
 
+  </div>
+</div>
+
 
 </body>
   <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
-
-  </div>
-</div>
-</html>
