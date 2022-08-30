@@ -8,3 +8,6 @@
 - [ ] Possibly store fetched JSON for X amount of minutes etc (to avoid hitting API every time a user reloads pages)
 
 - [ ] Add Contributors Count (easy to do - but will wait till all results issues is fixed) 
+
+- [ ] Add proper icons for star count etc. (Take the original SVG from GitHub etc) 
+
