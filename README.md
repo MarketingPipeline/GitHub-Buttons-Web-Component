@@ -20,7 +20,9 @@
     <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/Markdown-Tag.svg?style=social&label=Fork">
   </a>
    </p>  
-
+   
+   
+> Note: issue counts etc are currently not accurate. If you are a JavaScript developer & would like to address a fix for this see the [to-do](.github/TO-DO.md)
 
 ## Example and Usage
 
@@ -37,34 +39,34 @@ How to show Watch Button
 
 How to show Fork Button
 
-<github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
+    <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
 
 How to show Followers Button
 
-<github-button type="followers" repo="MarketingPipeline"></github-button>
+    <github-button type="followers" repo="MarketingPipeline"></github-button>
 
 
 
 How to show Sponsor Button
 
-<github-button type="sponsor" repo="MarketingPipeline"></github-button>
+    <github-button type="sponsor" repo="MarketingPipeline"></github-button>
 
 
 How to show Pull Requests Button
 
-<github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
+    <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
 How to show Issues Button
 
-<github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
+    <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
         
 
 How to show Custom Button
 
-<github-button type="custom" text="My super awesome custom button"></github-button>
+    <github-button type="custom" text="My super awesome custom button"></github-button>
 
 
 ###                                                                                                                    Options
@@ -79,7 +81,7 @@ How to show Custom Button
 </tr>
 <tr>
 <td>repo</td>
-<td> Your GitHub username + repo or GitHub Profile</td>
+ <td> Your GitHub username + repo or GitHub Profile <b>(Not Required For Custom Button)</b></td>
 <td><code>undefined</code></td>
 <td>Yes</td>
 </tr>
@@ -112,8 +114,8 @@ How to show Custom Button
  
 <tr>
 <td>text</td>
-<td>Text to show (For Custom Button Type Only)</td>
-<td><code>undefined</code></td>
+<td>Text to show <b>(Custom Button's Have No Default Text)</b></td>
+<td><code>Defined by Type</code></td>
 <td>No</td>
 </tr>
 
