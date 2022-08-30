@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+<html><head><link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
 <style>
 github-button{
   position:absolute;
@@ -10,97 +10,63 @@ github-button{
 border-bottom:none;
 }  
 </style>
-<div class="color-bg-canvas-inset pb-6">
+<script src="https://cdn.jsdelivr.net/npm/showdown@latest/dist/showdown.min.js"></script></head><body><div class="color-bg-canvas-inset pb-6">
   <header class="container-lg mx-auto p-responsive d-flex flex-items-center flex-wrap flex-md-nowrap pt-3 pb-6">
    
 
 <div class="container-lg mx-auto py-6 p-responsive">
         <!--<p>Docs / GitHub Buttons</p> wonder whats coming ;) --> 
       <h1>GitHub Buttons Web Component</h1>
-      <p>Showcase your GitHub success with GitHub star buttons, follower buttons & more.</p>
+      <p>Showcase your GitHub success with GitHub star buttons, follower buttons &amp; more.</p>
       <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Source code is available on <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component">GitHub</a>. Licensed <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/LICENSE">MIT</a>.</p>
 
   <hr>
   
   <div class="markdown-body">
     <h2 class="no_toc" id="contents">Contents</h2>
-<md>
-  - [Example and Usage](#example-and-usage)
-     * [How to show Star Button](#howtoshowstarbuttongithubbuttonrepomarketingpipelinemarkdowntaggithubbutton)
-     * [How to show Watch Button ](#howtoshowwatchbuttongithubbuttontypewatchrepomarketingpipelinemarkdowntaggithubbutton)
-     * [How to show Fork Button](#howtoshowforkbuttongithubbuttontypeforkrepomarketingpipelinemarkdowntaggithubbutton)
-     * [How to show Followers Button ](#howtoshowfollowersbuttongithubbuttontypefollowersrepomarketingpipelinegithubbutton)
-     * [How to show Sponsor Button](#howtoshowsponsorbuttongithubbuttontypesponsorrepomarketingpipelinegithubbutton)
-     * [How to show Pull Requests Button ](#howtoshowpullrequestsbuttongithubbuttontypepullsrepomarketingpipelinemarkdowntaggithubbutton)
-     * [How to show Issues Button](#howtoshowissuesbuttongithubbuttontypeissuesrepomarketingpipelinemarkdowntaggithubbutton)
-     * [How to show Custom Button](#howtoshowcustombuttongithubbuttononclickalerthelloworldiconhttpsuploadwikimediaorgwikipediacommonsthumbee0snicesvg800pxsnicesvgpngtypecustomtextgithubbuttonsbymarketingpipelinegithubbutton)
-- [Options](#options)
-
-
-    </md> 
-<md>
-
-
-## Example and Usage
-
-
-  
-How to use <b><i>GitHub Buttons</b></i>:
-
-   include this [script](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js)  in your HTML document.
-  
-  
-<pre>&lt;script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js">&lt;/script&gt;</pre>
-   
-
-
-
-  
-### How to show Star Button <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
-     
-    <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
-
-
-### How to show Watch Button <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
-
-    <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
-  
-
-### How to show Fork Button <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
-
-    <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
-
-
-### How to show Followers Button <github-button type="followers" repo="MarketingPipeline"></github-button>
-
-    <github-button type="followers" repo="MarketingPipeline"></github-button>
-
-
-### How to show Sponsor Button <github-button type="sponsor" repo="MarketingPipeline"></github-button>
-
-    <github-button type="sponsor" repo="MarketingPipeline"></github-button>  
-
-### How to show Pull Requests Button <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
-
-    <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
-  
-  
-### How to show Issues Button <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
-        
-    <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
-  
-### How to show Custom Button <github-button onclick="alert('Hello World ♥')" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png" type="custom" text="GitHub Buttons by @MarketingPipeline"></github-button>
-
-    <github-button type="custom" text="Custom Button Text"></github-button>  
-
- 
-  
-##                                                       Options
-
-
-
+<ul>
+<li><a href="#example-and-usage">Example and Usage</a><ul>
+<li><a href="#howtoshowstarbuttongithubbuttonrepomarketingpipelinemarkdowntaggithubbutton">How to show Star Button</a></li>
+<li><a href="#howtoshowwatchbuttongithubbuttontypewatchrepomarketingpipelinemarkdowntaggithubbutton">How to show Watch Button </a></li>
+<li><a href="#howtoshowforkbuttongithubbuttontypeforkrepomarketingpipelinemarkdowntaggithubbutton">How to show Fork Button</a></li>
+<li><a href="#howtoshowfollowersbuttongithubbuttontypefollowersrepomarketingpipelinegithubbutton">How to show Followers Button </a></li>
+<li><a href="#howtoshowsponsorbuttongithubbuttontypesponsorrepomarketingpipelinegithubbutton">How to show Sponsor Button</a></li>
+<li><a href="#howtoshowpullrequestsbuttongithubbuttontypepullsrepomarketingpipelinemarkdowntaggithubbutton">How to show Pull Requests Button </a></li>
+<li><a href="#howtoshowissuesbuttongithubbuttontypeissuesrepomarketingpipelinemarkdowntaggithubbutton">How to show Issues Button</a></li>
+<li><a href="#howtoshowcustombuttongithubbuttononclickalerthelloworldiconhttpsuploadwikimediaorgwikipediacommonsthumbee0snicesvg800pxsnicesvgpngtypecustomtextgithubbuttonsbymarketingpipelinegithubbutton">How to show Custom Button</a></li></ul></li>
+<li><a href="#options">Options</a></li>
+</ul> 
+<h2 id="exampleandusage">Example and Usage</h2>
+<p>How to use <b><i>GitHub Buttons</i></b>:</p>
+<p>include this <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js">script</a>  in your HTML document.</p>
+<pre>&lt;script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js"&gt;&lt;/script&gt;</pre>
+<h3 id="howtoshowstarbuttongithubbuttonrepomarketingpipelinemarkdowntaggithubbutton">How to show Star Button <github-button repo="MarketingPipeline/Markdown-Tag"></github-button></h3>
+<pre><code>&lt;github-button repo="MarketingPipeline/Markdown-Tag"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowwatchbuttongithubbuttontypewatchrepomarketingpipelinemarkdowntaggithubbutton">How to show Watch Button <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button></h3>
+<pre><code>&lt;github-button type="watch" repo="MarketingPipeline/Markdown-Tag"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowforkbuttongithubbuttontypeforkrepomarketingpipelinemarkdowntaggithubbutton">How to show Fork Button <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button></h3>
+<pre><code>&lt;github-button type="fork" repo="MarketingPipeline/Markdown-Tag"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowfollowersbuttongithubbuttontypefollowersrepomarketingpipelinegithubbutton">How to show Followers Button <github-button type="followers" repo="MarketingPipeline"></github-button></h3>
+<pre><code>&lt;github-button type="followers" repo="MarketingPipeline"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowsponsorbuttongithubbuttontypesponsorrepomarketingpipelinegithubbutton">How to show Sponsor Button <github-button type="sponsor" repo="MarketingPipeline"></github-button></h3>
+<pre><code>&lt;github-button type="sponsor" repo="MarketingPipeline"&gt;&lt;/github-button&gt;  
+</code></pre>
+<h3 id="howtoshowpullrequestsbuttongithubbuttontypepullsrepomarketingpipelinemarkdowntaggithubbutton">How to show Pull Requests Button <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button></h3>
+<pre><code>&lt;github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowissuesbuttongithubbuttontypeissuesrepomarketingpipelinemarkdowntaggithubbutton">How to show Issues Button <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button></h3>
+<pre><code>&lt;github-button type="issues" repo="MarketingPipeline/Markdown-Tag"&gt;&lt;/github-button&gt;
+</code></pre>
+<h3 id="howtoshowcustombuttongithubbuttononclickalerthelloworldiconhttpsuploadwikimediaorgwikipediacommonsthumbee0snicesvg800pxsnicesvgpngtypecustomtextgithubbuttonsbymarketingpipelinegithubbutton">How to show Custom Button <github-button onclick="alert('Hello World ♥')" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png" type="custom" text="GitHub Buttons by @MarketingPipeline"></github-button></h3>
+<pre><code>&lt;github-button type="custom" text="Custom Button Text"&gt;&lt;/github-button&gt;  
+</code></pre>
+<h2 id="options">Options</h2>
 <table>
-<tr>
+<tbody><tr>
 <th>Attribute</th>
 <th>Meaning</th>
 <th>Default</th>
@@ -116,7 +82,7 @@ How to use <b><i>GitHub Buttons</b></i>:
 
 <tr>
 <td>type</td>
-              <td>The type of button to show </code></td>
+              <td>The type of button to show </td>
 <td><code>Star Count</code></td>
 <td>No</td>
 </tr>
@@ -148,7 +114,7 @@ How to use <b><i>GitHub Buttons</b></i>:
 </tr>
 
 
- 
+
 <tr>
 <td>text</td>
 <td>Text to show <b>(Custom Button's Have No Default Text)</b></td>
@@ -160,12 +126,9 @@ How to use <b><i>GitHub Buttons</b></i>:
 
 
 
-</table>
-</github-md>
-
-  </div>
+</tbody></table></div>
 </div>
 
 
-</body>
-  <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
+
+</header></div></body></html>
