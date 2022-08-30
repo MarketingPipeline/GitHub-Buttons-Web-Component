@@ -223,6 +223,21 @@ body{
       }
     
     
+    // Check if open in new window
+      if (this.getAttribute("new-window") == "true"){
+           var TargetBlank = `target="_blank"`
+      } else{
+        var TargetBlank = ``
+      }
+    
+    
+    if (this.getAttribute("type") == "fork"){
+      Type = forks
+      Text = "Fork"
+       html_url = `https://github.com/${this.name}/fork`
+    }
+    
+    
     if (this.getAttribute("type") == "fork"){
       Type = forks
       Text = "Fork"
@@ -297,7 +312,7 @@ for (const follower in repo){
        }
   html_url = `https://github.com/sponsors/${this.name}`
   return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Sponsor ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" ${TargetBlank} aria-label="Sponsor ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a></span>
     
    `
     }
@@ -318,7 +333,7 @@ for (const follower in repo){
       }
 
   return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" ${html_url} rel="noopener noreferrer">${this.icon} <span class="gh-text">${Text}</span> </a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" ${html_url} ${TargetBlank} rel="noopener noreferrer">${this.icon} <span class="gh-text">${Text}</span> </a></span>
     
    `
     }
@@ -330,7 +345,7 @@ for (const follower in repo){
     
     
     return `
-    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="Star ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a><a class="gh-count" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="${format(Type)} stargazers on GitHub" style="display: block;">${format(Type)}</a></span>
+    <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" href="${html_url}" rel="noopener noreferrer" ${TargetBlank} aria-label="Star ${this.name} on GitHub">${this.icon} <span class="gh-text">${Text}</span> </a><a class="gh-count" href="${html_url}" rel="noopener noreferrer" target="_blank" aria-label="${format(Type)} stargazers on GitHub" style="display: block;">${format(Type)}</a></span>
     
    `;
   }
