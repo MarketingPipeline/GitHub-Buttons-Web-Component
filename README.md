@@ -26,6 +26,7 @@
 
 ## Example and Usage
 
+You can view a live demo of the GitHub Buttons web component [here](website.com)
 
 How to show Star Button
 
@@ -82,7 +83,7 @@ How to show Custom Button
 <tr>
 <td>repo</td>
  <td> Your GitHub username + repo or GitHub Profile <b>(Not Required For Custom Button)</b></td>
-<td><code>undefined</code></td>
+<td><code>Undefined</code></td>
 <td>Yes</td>
 </tr>
 
@@ -94,6 +95,9 @@ How to show Custom Button
 <td>No</td>
 </tr>
 
+
+
+
 <tr>
 <td>icon</td>
 <td>The icon to use in the button </td>
@@ -101,6 +105,13 @@ How to show Custom Button
 <td>No</td>
 </tr>
 
+
+<tr>
+<td>href</td>
+<td>The href / link for the button</td>
+<td><code>Defined by Type</code></td>
+<td>No</td>
+</tr>
 
 
 <tr>
