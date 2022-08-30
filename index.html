@@ -1,9 +1,13 @@
+<html>
 <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js"></script>   
 <style>
   .markdown-body h2{
 border-bottom:none;
 }
 </style>
+
 <div class="color-bg-canvas-inset pb-6">
   <header class="container-lg mx-auto p-responsive d-flex flex-items-center flex-wrap flex-md-nowrap pt-3 pb-6">
    
@@ -12,7 +16,7 @@ border-bottom:none;
         <p>Docs / GitHub Buttons</p>
       <h1>GitHub buttons</h1>
       <p>Showcase your GitHub success with GitHub star buttons, follower buttons & more.</p>
-      <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Available on <a href="https://github.com/mdo/github-buttons">GitHub</a>. Licensed <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2</a>.</p>
+      <p>A web component made by <a href="https://github.com/MarketingPipeline">@MarketingPipeline</a>. Source code is available on <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/">GitHub</a>. Licensed <a href="https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/LICENSE">MIT</a>.</p>
 
   <hr>
   
@@ -33,44 +37,52 @@ border-bottom:none;
 
 
 ## Example and Usage
-c
+
 
   
-### Star  
+
   
 ### How to show Star Button <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
      
-
-
-
     <github-button repo="MarketingPipeline/Markdown-Tag"></github-button>
- 
-## How to show Watch Button <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
-## How to show Fork Button <github-button href="test" text="Follow @${this.name}" type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
+### How to show Watch Button <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+    <github-button type="watch" repo="MarketingPipeline/Markdown-Tag"></github-button>
+  
+
+### How to show Fork Button <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+    <github-button type="fork" repo="MarketingPipeline/Markdown-Tag"></github-button>
 
 
+### How to show Followers Button <github-button type="followers" repo="MarketingPipeline"></github-button>
 
-## How to show Followers Button <github-button type="followers" repo="MarketingPipeline"></github-button>
-
-
-
-## How to show Sponsor Button <github-button type="sponsor" repo="MarketingPipeline"></github-button>
+    <github-button type="followers" repo="MarketingPipeline"></github-button>
 
 
-## How to show Pull Requests Button <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
+### How to show Sponsor Button <github-button type="sponsor" repo="MarketingPipeline"></github-button>
 
+    <github-button type="sponsor" repo="MarketingPipeline"></github-button>  
 
-## How to show Issues Button <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
+### How to show Pull Requests Button <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
+
+    <github-button type="pulls" repo="MarketingPipeline/Markdown-Tag"></github-button>
+  
+  
+### How to show Issues Button <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
         
+    <github-button type="issues" repo="MarketingPipeline/Markdown-Tag"></github-button>
+  
+### How to show Custom Button <github-button onclick="alert('Hello World ♥')" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png" type="custom" text="GitHub Buttons by @MarketingPipeline"></github-button>
 
-## How to show Custom Button <github-button onclick="alert('hello')" type="custom" text="GitHubs Buttons by @MarketingPipeline"></github-button>
-
+    <github-button type="custom" text="Custom Button Text"></github-button>  
 
  
   
 ##                                                       Options
+
 
 
 <table>
@@ -82,8 +94,8 @@ c
 </tr>
 <tr>
 <td>repo</td>
-  <td> Your GitHub username + repo or GitHub Profile <b>(Not Required For Custom Button)</b></td>
-<td><code>undefined</code></td>
+ <td> Your GitHub username + repo or GitHub Profile <b>(Not Required For Custom Button)</b></td>
+<td><code>Undefined</code></td>
 <td>Yes</td>
 </tr>
 
@@ -95,6 +107,9 @@ c
 <td>No</td>
 </tr>
 
+
+
+
 <tr>
 <td>icon</td>
 <td>The icon to use in the button </td>
@@ -102,6 +117,13 @@ c
 <td>No</td>
 </tr>
 
+
+<tr>
+<td>href</td>
+<td>The href / link for the button</td>
+<td><code>Defined by Type</code></td>
+<td>No</td>
+</tr>
 
 
 <tr>
@@ -115,8 +137,8 @@ c
  
 <tr>
 <td>text</td>
-<td>Text to show (For Custom Button Type Only)</td>
-<td><code>undefined</code></td>
+<td>Text to show <b>(Custom Button's Have No Default Text)</b></td>
+<td><code>Defined by Type</code></td>
 <td>No</td>
 </tr>
 
@@ -130,7 +152,7 @@ c
 
 </body>
   <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
-</html>
+
   </div>
 </div>
-
+</html>
