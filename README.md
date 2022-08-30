@@ -31,9 +31,9 @@ You can view a demo of the GitHub Buttons web component [here](https://marketing
 
 How to use <b><i>GitHub Buttons</b></i>:
 
-   include this [script](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js)  in your HTML document.
+   include this [script](https://github.com/MarketingPipeline/GitHub-Buttons-Web-Component/blob/main/version/1.0.0/src/github-buttons-wc.js) in your HTML document.
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js"></script>    
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/GitHub-Buttons-Web-Component/version/1.0.0/src/github-buttons-wc.js" defer></script>    
 
 
 
