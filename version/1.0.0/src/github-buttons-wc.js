@@ -250,7 +250,7 @@ body{
      if (this.getAttribute("type") == "followers"){
      var repo = this.repoDetails;
        var followerCount = 0 
-         html_url = `https://github.com/${this.name}/follow`
+         html_url = `https://github.com/${this.name}/`
 for (const follower in repo){
 
   followerCount += 1
