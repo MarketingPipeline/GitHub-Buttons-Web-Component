@@ -15,9 +15,9 @@ class Repository extends HTMLElement {
   this.endpoint = `https://api.github.com/users/${this.name}/followers`;
     }
     
-            if (this.getAttribute("type") == "issues" || this.getAttribute("type") == "pulls"  ){
+            if (this.getAttribute("type") == "pulls"  ){
     
-  this.endpoint = `https://api.github.com/repos/${this.name}/issues`;
+  this.endpoint = `https://api.github.com/repos/${this.name}/pulls`;
     }
     
    
@@ -260,33 +260,29 @@ for (const follower in repo){
     }
     
        if (this.getAttribute("type") == "issues"){
-       var issueCount = 0 
+       var issueCount = this.repoDetails.open_issues
          html_url = `https://github.com/${this.name}/issues`
-       for (const issue in this.repoDetails){
-         // ignore pull requests
-         if (!this.repoDetails[issue].pull_request){
-          // do nothing
-            issueCount +=1
-             }
+ 
          
          Text = "Issues"
   Type = issueCount
        }
        
         
-    }
+    
     
 
     
     
        if (this.getAttribute("type") == "pulls"){
        var pullCount = 0 
-       for (const issue in this.repoDetails){
+       for (const pull in this.repoDetails){
          // ignore issues
-         if (this.repoDetails[issue].pull_request){
+         console.log(this.repoDetails[pull])
+        
           // do nothing
             pullCount +=1
-             }
+            
           html_url = `https://github.com/${this.name}/pulls`
          Text = "Pull Requests"
   Type = pullCount
