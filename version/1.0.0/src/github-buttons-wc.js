@@ -1,9 +1,8 @@
 
-
 class Repository extends HTMLElement {
   constructor() {
     super();
-
+     this.icon = "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='12 12 40 40'%3e%3cpath fill='%23333' d='M32 13.4c-10.5 0-19 8.5-19 19 0 8.4 5.5 15.5 13 18 1 .2 1.3-.4 1.3-.9v-3.2c-5.3 1.1-6.4-2.6-6.4-2.6-.9-2.1-2.1-2.7-2.1-2.7-1.7-1.2.1-1.1.1-1.1 1.9.1 2.9 2 2.9 2 1.7 2.9 4.5 2.1 5.5 1.6.2-1.2.7-2.1 1.2-2.6-4.2-.5-8.7-2.1-8.7-9.4 0-2.1.7-3.7 2-5.1-.2-.5-.8-2.4.2-5 0 0 1.6-.5 5.2 2 1.5-.4 3.1-.7 4.8-.7 1.6 0 3.3.2 4.7.7 3.6-2.4 5.2-2 5.2-2 1 2.6.4 4.6.2 5 1.2 1.3 2 3 2 5.1 0 7.3-4.5 8.9-8.7 9.4.7.6 1.3 1.7 1.3 3.5v5.2c0 .5.4 1.1 1.3.9 7.5-2.6 13-9.7 13-18.1 0-10.5-8.5-19-19-19z'/%3e%3c/svg%3e"
     this.repoDetails = null;
 
     this.name = this.getAttribute("repo");
@@ -14,10 +13,12 @@ class Repository extends HTMLElement {
        apiRoute = "users/"
   this.endpoint = `https://api.github.com/users/${this.name}/followers`;
     }
-    
+     
+ 
             if (this.getAttribute("type") == "pulls"  ){
     
   this.endpoint = `https://api.github.com/repos/${this.name}/pulls`;
+              this.icon= "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40'  height='16' viewBox='0 0 16 16'  %3e%3cpath fill='%23333' d='M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z'/%3e%3c/svg%3e"
     }
     
    
@@ -25,8 +26,7 @@ class Repository extends HTMLElement {
     this.getDetails = this.getDetails.bind(this);
 
     this.innerHTML = this.style + ` <span class="github-btn github-stargazers github-btn-large"><a class="gh-btn" rel="noopener noreferrer" target="_blank" aria-label="Star twbs/bootstrap on GitHub"><span class="gh-text">Loading</span> </a><a class="gh-count" href="https://github.com/twbs/bootstrap/stargazers" rel="noopener noreferrer" target="_blank" aria-label="159,078 stargazers on GitHub" style="display: block;">....</a></span>`;
-      
-      this.icon = "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='12 12 40 40'%3e%3cpath fill='%23333' d='M32 13.4c-10.5 0-19 8.5-19 19 0 8.4 5.5 15.5 13 18 1 .2 1.3-.4 1.3-.9v-3.2c-5.3 1.1-6.4-2.6-6.4-2.6-.9-2.1-2.1-2.7-2.1-2.7-1.7-1.2.1-1.1.1-1.1 1.9.1 2.9 2 2.9 2 1.7 2.9 4.5 2.1 5.5 1.6.2-1.2.7-2.1 1.2-2.6-4.2-.5-8.7-2.1-8.7-9.4 0-2.1.7-3.7 2-5.1-.2-.5-.8-2.4.2-5 0 0 1.6-.5 5.2 2 1.5-.4 3.1-.7 4.8-.7 1.6 0 3.3.2 4.7.7 3.6-2.4 5.2-2 5.2-2 1 2.6.4 4.6.2 5 1.2 1.3 2 3 2 5.1 0 7.3-4.5 8.9-8.7 9.4.7.6 1.3 1.7 1.3 3.5v5.2c0 .5.4 1.1 1.3.9 7.5-2.6 13-9.7 13-18.1 0-10.5-8.5-19-19-19z'/%3e%3c/svg%3e"
+     
   }
 
   async connectedCallback() {
@@ -278,7 +278,7 @@ for (const follower in repo){
        var pullCount = 0 
        for (const pull in this.repoDetails){
          // ignore issues
-         console.log(this.repoDetails[pull])
+        // console.log(this.repoDetails[pull])
         
           // do nothing
             pullCount +=1
