@@ -22,7 +22,7 @@
    </p>  
    
    
-> Note: issue counts etc are currently not accurate. If you are a JavaScript developer & would like to address a fix for this see the [to-do](.github/TO-DO.md)
+> Note: contributor & pull request counts etc are currently not accurate. If you are a JavaScript developer & would like to address a fix for this see the [to-do](.github/TO-DO.md)
 
 ## Example and Usage
 
